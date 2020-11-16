@@ -2,6 +2,7 @@ package com.moringaschool.herofind;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -28,4 +29,13 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
     }
 
+    @Override
+    public void onClick(View v) {
+        if (v == mFindHerosButton) {
+            String location = mLocationEditText.getText().toString();
+            Intent intent = new Intent(MainActivity.this, HerosActivity.class);
+            intent.putExtra("location", location);
+            startActivity(intent);
+        }
+    }
 }
