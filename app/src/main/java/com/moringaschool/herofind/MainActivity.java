@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
 
@@ -21,5 +22,10 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
+
+        mFindHerosButton.setOnClickListener(this);
+
     }
+
 }
