@@ -13,7 +13,7 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity implements  View.OnClickListener{
 
-    @BindView(R.id.findHerosButton) Button mFindWildlifesButton;
+    @BindView(R.id.findHerosButton) Button mFindHerosButton;
     @BindView(R.id.locationEditText) EditText mLocationEditText;
     @BindView(R.id.appNameTextView) TextView mAppNameTextView;
 
