@@ -2,7 +2,10 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/akronim</item>
+        <item>@font/atomic_age</item>
         <item>@font/bangers</item>
         <item>@font/italiana</item>
+        <item>@font/knewave</item>
+        <item>@font/lobster</item>
     </array>
 </resources>

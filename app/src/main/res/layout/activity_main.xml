@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/lady"
+    android:background="@drawable/herof"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:fontFamily="monospace"
+        android:fontFamily="@font/lobster"
         android:text="MyHerosApp"
         android:textColor="@color/purple_700"
         android:textSize="30sp"
@@ -25,12 +25,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/findHerosButton"
-        android:layout_marginBottom="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="137dp"
+        android:layout_marginBottom="25dp"
         android:background="@color/colorTextIcons"
         android:hint=" Heros Code"
         android:padding="5dp"
         android:textColor="#110250"
-        android:textColorHint="#EFECEC" />
+        android:textColorHint="#851010" />
 
     <Button
         android:id="@+id/findHerosButton"
@@ -40,6 +42,6 @@
         android:layout_centerHorizontal="true"
         android:background="@color/colorAccent"
         android:text="Find Heros"
-        android:textColor="@color/colorTextIcons"
+        android:textColor="@color/black"
         android:textColorHint="#B71C1C" />
 </RelativeLayout>
