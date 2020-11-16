@@ -14,7 +14,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="monospace"
-        android:text="MyWildlifes"
+        android:text="MyHeros"
         android:textColor="@color/colorTextIcons"
         android:textSize="30sp"
         android:textStyle="bold" />
@@ -24,19 +24,19 @@
         android:layout_height="wrap_content"
         android:id="@+id/locationEditText"
         android:background="@color/colorTextIcons"
-        android:layout_above="@+id/findWildlifesButton"
+        android:layout_above="@+id/findHerosButton"
         android:layout_marginBottom="10dp"
         android:padding="5dp"
         android:hint="Enter Zip Code"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:id="@+id/findWildlifesButton"
+        android:id="@+id/findHerosButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:text="Find Wildlifes"
+        android:text="Find Heros"
         android:textColor="@color/colorTextIcons"
         android:background="@color/colorAccent"/>
 </RelativeLayout>
