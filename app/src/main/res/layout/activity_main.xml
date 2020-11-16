@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/lady"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,8 +15,8 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:fontFamily="monospace"
-        android:text="MyHeros"
-        android:textColor="@color/colorTextIcons"
+        android:text="MyHerosApp"
+        android:textColor="@color/purple_700"
         android:textSize="30sp"
         android:textStyle="bold" />
 
