@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">HeroFind</string>
+    <string name="enter_password" />
+    <string name="login" />
+    <string name="enter_email" />
 </resources>
