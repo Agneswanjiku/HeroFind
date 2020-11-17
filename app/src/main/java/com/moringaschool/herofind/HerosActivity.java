@@ -46,7 +46,7 @@ public class HerosActivity extends AppCompatActivity {
                 Toast.makeText(HerosActivity.this, heros, Toast.LENGTH_LONG).show();
             }
         });
-        mLocationTextView.setText("Here are all the parks near: " + location);
+        mLocationTextView.setText("Here are some of heros and their  culture metholodys: " + location);
     }
 
 
