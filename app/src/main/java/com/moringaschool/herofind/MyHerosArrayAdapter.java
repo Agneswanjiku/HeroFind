@@ -4,10 +4,12 @@ import android.content.Context;
 import android.widget.ArrayAdapter;
 
 public class MyHerosArrayAdapter extends ArrayAdapter {
+    //Accessing the data from another class
     private Context mContext;
     private String[] mHeros;
     private String[] mCultureherosmythology ;
 
+    //constructors initialize instance variables of an object before the reference of this object is returned by new
     public MyHerosArrayAdapter (Context mContext, int resource, String[] mHeros, String[] mCultureherosmythology){
         super(mContext, resource);
         this.mContext = mContext;

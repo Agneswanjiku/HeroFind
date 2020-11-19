@@ -18,7 +18,7 @@ public class HerosActivity extends AppCompatActivity {
     @BindView(R.id.locationTextView) TextView mLocationTextView;
     @BindView(R.id.listView) ListView mListView;
 
-
+// we use private to  mean that it can't be accessed in other class except the class in which they are declared.
     private String[] cultureherosmythology = new String[]{"Abenak", "Ainu",
             "Ausralian Abronigical", "Armenian", "Ashanti", "Aztec",
             "Banks Islads", "Buddhist", "Carolline Islads", "Lakota",
