@@ -73,9 +73,9 @@ public class HeroListAdapter extends RecyclerView.Adapter<HeroListAdapter.HeroVi
 
         @Override
         public void onClick(View view) {
-            final Animation animation = AnimationUtils.loadAnimation(mContext,R.anim.bounce);
-            flipIt(view);
-            view.startAnimation(animation);
+//            final Animation animation = AnimationUtils.loadAnimation(mContext,R.anim.bounce);
+//            flipIt(view);
+//            view.startAnimation(animation);
             int itemPosition = getLayoutPosition();
             Intent intent = new Intent(mContext, HeroDetailActivity.class);
             intent.putExtra("position", itemPosition);
