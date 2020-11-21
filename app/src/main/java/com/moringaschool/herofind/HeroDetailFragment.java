@@ -42,8 +42,6 @@ public class HeroDetailFragment extends Fragment implements  View.OnClickListene
     TextView mAliases;
     @BindView(R.id.relatives)
     TextView mRelatives;
-    @BindView(R.id.savedBatmanButton)
-    Button mSavedBatman;
 
     private Result heroItems;
 
@@ -87,7 +85,6 @@ public class HeroDetailFragment extends Fragment implements  View.OnClickListene
         batmanName.setText(("Movie Name: ") + heroItems.getName());
         placeOfBirth.setText(("Place of Birth: ") + heroItems.getBiography().getPlaceOfBirth());
 
-        mSavedBatman.setOnClickListener(this);
 
         return heroDetails;
     }
