@@ -3,4 +3,5 @@
     <item name="heroImageView" type="id" />
     <item name="heroNameTextView" type="id" />
     <item name="fullNameTextView" type="id" />
+    <item name="herosButton" type="id" />
 </resources>

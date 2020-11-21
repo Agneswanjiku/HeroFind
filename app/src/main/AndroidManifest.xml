@@ -9,10 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HeroFind">
-        <activity android:name=".HeroList"></activity>
+        <activity android:name=".HeroListActivity"></activity>
         <activity android:name=".HeroDetailActivity" />
         <activity android:name=".LoginActivity" />
-        <activity android:name=".HerosActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
