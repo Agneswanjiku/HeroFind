@@ -4,4 +4,7 @@
     <item name="heroNameTextView" type="id" />
     <item name="fullNameTextView" type="id" />
     <item name="herosButton" type="id" />
+    <item name="savedHerosButton" type="id" />
+    <item name="button1" type="id" />
+    <item name="blink" type="id" />
 </resources>
