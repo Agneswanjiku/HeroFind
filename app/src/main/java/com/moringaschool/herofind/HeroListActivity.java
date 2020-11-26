@@ -28,13 +28,10 @@ public class HeroListActivity extends AppCompatActivity {
 
     private static final  String TAG = " ";
 
-    @BindView(R.id.errorTextView)
-    TextView mError;
-    @BindView(R.id.progressBar)
-    ProgressBar mProgressBar;
+    @BindView(R.id.errorTextView) TextView mError;
+    @BindView(R.id.progressBar) ProgressBar mProgressBar;
 
-    @BindView(R.id.recyclerView)
-    RecyclerView mRecyclerView;
+    @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
     private HeroListAdapter mAdapter;
 
     List<Hero> heroes;
