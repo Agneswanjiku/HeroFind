@@ -9,18 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HeroFind">
-        <activity android:name=".CreateAccountActivity"></activity>
-        <activity android:name=".HeroListActivity" />
-        <activity android:name=".HeroDetailActivity" />
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".SavedHeroActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringaschool.herofind.MainActivity" />
+        </activity>
+        <activity android:name=".HeroDetailActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringaschool.herofind.HeroListActivity" />
+        </activity>
+        <activity android:name=".HeroListActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.moringaschool.herofind.MainActivity" />
+        </activity>
+        <activity android:name=".CreateAccountActivity" />
+        <activity android:name=".MainActivity" />
 
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
