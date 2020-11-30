@@ -23,6 +23,15 @@ Week 2 UI Images
 ![Screenshot from 2020-11-25 11-43-13](https://user-images.githubusercontent.com/63198747/100203532-c8855f00-2f13-11eb-9b1e-42ebd7b91ec8.png)
 ![Screenshot from 2020-11-25 11-43-13](https://user-images.githubusercontent.com/63198747/100203625-e8b51e00-2f13-11eb-8c48-b0d3d4e22262.png)
 
+Week 3 UI Authentification with firebase
+
+![Screenshot from 2020-11-30 11-15-54](https://user-images.githubusercontent.com/63198747/100584692-7c646100-32fd-11eb-9f39-6d9052bbd456.png)
+![Screenshot from 2020-11-30 11-04-24](https://user-images.githubusercontent.com/63198747/100584740-8c7c4080-32fd-11eb-82e3-6b577651ec7f.png)
+![Screenshot from 2020-11-30 11-04-26](https://user-images.githubusercontent.com/63198747/100584775-9bfb8980-32fd-11eb-8a61-f7ee700ec524.png)
+![Screenshot from 2020-11-30 11-05-59](https://user-images.githubusercontent.com/63198747/100584816-ab7ad280-32fd-11eb-925d-ca74d354d922.png)
+![Screenshot from 2020-11-30 11-07-32](https://user-images.githubusercontent.com/63198747/100584857-b897c180-32fd-11eb-8cfd-41d3fdc5de5a.png)
+![Screenshot from 2020-11-30 11-07-34](https://user-images.githubusercontent.com/63198747/100584961-da914400-32fd-11eb-82fc-0b8ac77ca381.png)
+![Screenshot from 2020-11-30 11-09-19](https://user-images.githubusercontent.com/63198747/100584984-e41aac00-32fd-11eb-8011-0dcf4d235c6c.png)
 
 
 
