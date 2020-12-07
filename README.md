@@ -37,6 +37,9 @@ Week 3 UI Authentification with firebase
 ![Screenshot from 2020-11-30 11-07-34](https://user-images.githubusercontent.com/63198747/100584961-da914400-32fd-11eb-82fc-0b8ac77ca381.png)
 ![Screenshot from 2020-11-30 11-09-19](https://user-images.githubusercontent.com/63198747/100584984-e41aac00-32fd-11eb-8011-0dcf4d235c6c.png)
 
+Week4 Animation
+![Screenshot from 2020-12-07 14-34-57](https://user-images.githubusercontent.com/63198747/101346442-9839ab00-3899-11eb-93c8-af7a9ec2e3c6.png)
+![Screenshot from 2020-12-07 14-34-57](https://user-images.githubusercontent.com/63198747/101346495-b30c1f80-3899-11eb-89de-9e36250ad6d9.png)
 
 
 # Known Bugs
