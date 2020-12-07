@@ -9,6 +9,7 @@ import android.os.Bundle;
 import com.moringaschool.herofind.adapters.HeroPagerAdapter;
 import com.moringaschool.herofind.model.Result;
 
+
 import org.parceler.Parcels;
 
 import java.util.ArrayList;
@@ -18,8 +19,7 @@ import butterknife.ButterKnife;
 
 public class HeroDetailActivity extends AppCompatActivity {
 
-    @BindView(R.id.viewPager)
-    ViewPager mPager;
+    @BindView(R.id.viewPager) ViewPager mPager;
 
     private HeroPagerAdapter mAdapter;
 

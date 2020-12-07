@@ -24,14 +24,11 @@ import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
-    public static final String TAG = LoginActivity.class.getSimpleName();
-    @BindView(R.id.passwordLoginButton)
-    Button mPasswordLoginButton;
-    @BindView(R.id.emailEditText)
-    EditText mEmailEditText;
+     public static final String TAG = LoginActivity.class.getSimpleName();
+    @BindView(R.id.passwordLoginButton) Button mPasswordLoginButton;
+    @BindView(R.id.emailEditText) EditText mEmailEditText;
     @BindView(R.id.passwordEditText) EditText mPasswordEditText;
-    @BindView(R.id.registerTextView)
-    TextView mRegisterTextView;
+    @BindView(R.id.registerTextView) TextView mRegisterTextView;
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -68,7 +65,17 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         mAuthProgressDialog.setCancelable(false);
     }
 
-
+    @Override
+    public void onClick(View view){
+        if(view == mRegisterTextView){
+            Intent intent = new Intent(LoginActivity.this, CreateAccountActivity.class);
+            startActivity(intent);
+            finish();
+        }
+        if (view == mPasswordLoginButton){
+            loginWithPassword();
+        }
+    }
 
     private void loginWithPassword(){
         String email = mEmailEditText.getText().toString().trim();
@@ -95,17 +102,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         });
     }
 
-        @Override
-    public void onClick(View view){
-        if(view == mRegisterTextView){
-            Intent intent = new Intent(LoginActivity.this, CreateAccountActivity.class);
-            startActivity(intent);
-            finish();
-        }
-        if (view == mPasswordLoginButton){
-            loginWithPassword();
-        }
-    }
     @Override
     public void onStart(){
         super.onStart();

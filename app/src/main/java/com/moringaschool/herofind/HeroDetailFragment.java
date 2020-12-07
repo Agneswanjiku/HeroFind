@@ -13,6 +13,10 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.moringaschool.herofind.model.Result;
 import com.squareup.picasso.Picasso;
 
@@ -28,20 +32,15 @@ import butterknife.ButterKnife;
  */
 public class HeroDetailFragment extends Fragment implements  View.OnClickListener {
 
-    @BindView(R.id.batmanNameTextView)
-    TextView batmanName;
-    @BindView(R.id.placeOfBirthTextView)
-    TextView placeOfBirth;
-    @BindView(R.id.occupationTextView)
-    TextView mOccupation;
-    @BindView(R.id.batman2ImageView)
-    ImageView imageView;
-    @BindView(R.id.power)
-    TextView mPower;
-    @BindView(R.id.aliasesTextView)
-    TextView mAliases;
-    @BindView(R.id.relatives)
-    TextView mRelatives;
+
+    @BindView(R.id.batmanNameTextView) TextView batmanName;
+    @BindView(R.id.placeOfBirthTextView) TextView placeOfBirth;
+    @BindView(R.id.occupationTextView) TextView mOccupation;
+    @BindView(R.id.batman2ImageView) ImageView imageView;
+    @BindView(R.id.power) TextView mPower;
+    @BindView(R.id.aliasesTextView) TextView mAliases;
+    @BindView(R.id.relatives) TextView mRelatives;
+    @BindView(R.id.savedBatmanButton) Button mSavedBatman;
 
     private Result heroItems;
 
@@ -78,19 +77,37 @@ public class HeroDetailFragment extends Fragment implements  View.OnClickListene
         Picasso.get().load(heroItems.getImage().getUrl()).into(imageView);
 
 
-        mPower.setText(("Speed: ") + heroItems.getPowerstats().getSpeed());
-        mRelatives.setText(("Relatives: ") + heroItems.getConnections().getRelatives());
-        mAliases.setText(("Aliases : ") + heroItems.getBiography().getAliases());
-        mOccupation.setText(("Occupation: ") + heroItems.getWork().getOccupation());
-        batmanName.setText(("Movie Name: ") + heroItems.getName());
-        placeOfBirth.setText(("Place of Birth: ") + heroItems.getBiography().getPlaceOfBirth());
+        mPower.setText(("Speed: ")+ heroItems.getPowerstats().getSpeed());
+        mRelatives.setText(("Relatives: ")+ heroItems.getConnections().getRelatives());
+        mAliases.setText(("Aliases : ")+ heroItems.getBiography().getAliases());
+        mOccupation.setText(("Occupation: ")+heroItems.getWork().getOccupation());
+        batmanName.setText(("Movie Name: ")+heroItems.getName());
+        placeOfBirth.setText(("Place of Birth: ")+ heroItems.getBiography().getPlaceOfBirth());
 
+        mSavedBatman.setOnClickListener(this);
 
         return heroDetails;
     }
 
     @Override
-    public void onClick(View v) {
+    public void onClick(View view) {
+        final Animation animation = AnimationUtils.loadAnimation(getContext(),R.anim.bounce);
+        flipIt(view);
+        if(view == mSavedBatman){
+            mSavedBatman.startAnimation(animation);
 
+            DatabaseReference ref = FirebaseDatabase
+                    .getInstance()
+                    .getReference(Constants.FIREBASE_CHILD_FLASH);
+            ref.push().setValue(heroItems);
+            Toast.makeText(getContext(), "Hero Saved Successfully", Toast.LENGTH_SHORT).show();
+        }
     }
+    private void flipIt(final View viewToFlip) {
+        ObjectAnimator flip = ObjectAnimator.ofFloat(viewToFlip, "rotationX", 2.0f, 360f);
+        flip.setDuration(2000);
+        flip.start();
+    }
+
+
 }

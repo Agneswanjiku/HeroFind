@@ -21,12 +21,12 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class SavedHeroActivity extends AppCompatActivity {
+
     private DatabaseReference mReference;
     private FirebaseRecyclerAdapter<Result, FirebaseViewHolder> mFirebaseAdapter;
 
 
-    @BindView(R.id.recyclerView)
-    RecyclerView mRecyclerView;
+    @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,3 +76,57 @@ public class SavedHeroActivity extends AppCompatActivity {
         }
     }
 }
+//    private DatabaseReference mReference;
+//    private FirebaseRecyclerAdapter<Result, FirebaseViewHolder> mFirebaseAdapter;
+//
+//
+//    @BindView(R.id.recyclerView) RecyclerView mRecyclerView;
+//
+//    @Override
+//    protected void onCreate(Bundle savedInstanceState) {
+//        super.onCreate(savedInstanceState);
+//        setContentView(R.layout.activity_saved_hero);
+//        ButterKnife.bind(this);
+//
+//        mReference = FirebaseDatabase.getInstance().getReference(Constants.FIREBASE_CHILD_FLASH);
+//        setUpFirebaseAdapter();
+//    }
+//
+//    private void setUpFirebaseAdapter(){
+//        FirebaseRecyclerOptions<Result> options =
+//                new FirebaseRecyclerOptions.Builder<Result>()
+//                        .setQuery(mReference, Result.class)
+//                        .build();
+//
+//        mFirebaseAdapter = new FirebaseRecyclerAdapter<Result, FirebaseViewHolder>(options) {
+//            @Override
+//            protected void onBindViewHolder(@NonNull FirebaseViewHolder firebaseViewHolder, int position, @NonNull Result results) {
+//                firebaseViewHolder.bindHero(results);
+//            }
+//
+//            @NonNull
+//            @Override
+//            public FirebaseViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+//                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.saved_hero, parent, false);
+//                return new FirebaseViewHolder(view);
+//            }
+//        };
+//
+//        mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+//        mRecyclerView.setAdapter(mFirebaseAdapter);
+//    }
+//
+//    @Override
+//    protected void onStart() {
+//        super.onStart();
+//        mFirebaseAdapter.startListening();
+//    }
+//
+//    @Override
+//    protected void onStop() {
+//        super.onStop();
+//        if(mFirebaseAdapter!= null) {
+//            mFirebaseAdapter.stopListening();
+//        }
+//    }
+//}
